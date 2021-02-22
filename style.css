@@ -1,0 +1,87 @@
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    height: 100%;
+    margin: 0;
+}
+
+.img {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 2px 25px 104px 11px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 2px 25px 104px 11px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 2px 25px 104px 11px rgba(0,0,0,1) inset;
+}
+
+.img1 {
+    background-image: url(./Images/img-1.png);
+    min-height: 100%;
+}
+
+.img2 {
+    background-image: url(./Images/img-2.jpg);
+    min-height: 100%;
+}
+
+.img3 {
+    background-image: url(./Images/img-3.jpg);
+    min-height: 100%;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    transition: top 0.3s ease-in-out;
+}
+
+.ptext:hover {
+    top: 48%;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.ptext .border:hover {
+    box-shadow: 2px 25px 104px 11px rgba(0,0,0,1);
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section .light-text {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.dark-text {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+@media (max-width: 700px) {
+    .ptext{
+        font-size: 80%;
+    }
+
+    .section {
+        padding: 40px 60px;
+    }
+}
